@@ -83,10 +83,7 @@
   .ret-divider { border-top: 1px solid var(--container-border); margin: 8px 0; }
   .checks-row { display: flex; gap: 40px; }
 
-  .bottom-bar { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; background: var(--container-bg); border-top: 1px solid var(--container-border); position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; box-shadow: 0 -2px 6px rgba(0,0,0,0.08); }
-  .modal-content { padding-bottom: 100px; }
-  #screen-B { padding-bottom: 74px; }
-  .bottom-bar .group { display: flex; gap: 12px; }
+  .inline-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 32px; }
 
   /* ---- Highlights results screen ---- */
   .body-wrap { padding: 24px; background: var(--container-bg); }
@@ -203,14 +200,12 @@
           <div class="field-header"><label>Publication date</label><span class="what-is-this" style="cursor:default;" title="Not part of this test">WHAT IS THIS?</span></div>
           <div class="input-box collapsed" style="font-style:normal;">From&nbsp;&nbsp;dd/mm/yyyy&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;dd/mm/yyyy</div>
         </div>
+        <div class="inline-actions">
+          <button class="btn btn-navy" onclick="showUnfilteredResults()">CANCEL</button>
+          <button class="btn btn-red" onclick="void(0)">CLEAR FIELDS</button>
+          <button class="btn btn-blue" id="runSearchBtn" onclick="runSearch()">RUN SEARCH</button>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="bottom-bar">
-    <div class="group"><button class="btn btn-navy" onclick="showUnfilteredResults()">CANCEL</button></div>
-    <div class="group">
-      <button class="btn btn-red" onclick="void(0)">CLEAR FIELDS</button>
-      <button class="btn btn-blue" id="runSearchBtn" onclick="runSearch()">RUN SEARCH</button>
     </div>
   </div>
 </div>
