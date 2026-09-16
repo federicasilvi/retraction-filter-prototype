@@ -83,7 +83,7 @@
   .ret-divider { border-top: 1px solid var(--container-border); margin: 8px 0; }
   .checks-row { display: flex; gap: 40px; }
 
-  .inline-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 32px; }
+  .inline-actions { display: flex; justify-content: flex-start; gap: 12px; margin: 32px 0 0; }
 
   /* ---- Highlights results screen ---- */
   .body-wrap { padding: 24px; background: var(--container-bg); }
@@ -200,12 +200,12 @@
           <div class="field-header"><label>Publication date</label><span class="what-is-this" style="cursor:default;" title="Not part of this test">WHAT IS THIS?</span></div>
           <div class="input-box collapsed" style="font-style:normal;">From&nbsp;&nbsp;dd/mm/yyyy&nbsp;&nbsp;&nbsp;&nbsp;to&nbsp;&nbsp;dd/mm/yyyy</div>
         </div>
-        <div class="inline-actions">
-          <button class="btn btn-navy" onclick="showUnfilteredResults()">CANCEL</button>
-          <button class="btn btn-red" onclick="void(0)">CLEAR FIELDS</button>
-          <button class="btn btn-blue" id="runSearchBtn" onclick="runSearch()">RUN SEARCH</button>
-        </div>
       </div>
+    </div>
+    <div class="inline-actions">
+      <button class="btn btn-navy" onclick="showUnfilteredResults()">CANCEL</button>
+      <button class="btn btn-red" onclick="void(0)">CLEAR FIELDS</button>
+      <button class="btn btn-blue" id="runSearchBtn" onclick="runSearch()">RUN SEARCH</button>
     </div>
   </div>
 </div>
